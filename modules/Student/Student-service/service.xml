@@ -21,6 +21,15 @@
         <column name="modifiedDate" type="Date"/>
 
         <!-- Other fields -->
+        <column name="studentCode" type="String"/>
+        <column name="studentName" type="String"/>
+        <column name="studentEmail" type="String"/>
+        <column name="studentPhone" type="String"/>
+        <column name="studentGender" type="String"/>
+        <column name="studentAddress" type="String"/>
+
+
+        <!-- Other fields -->
         <column name="field1" type="String"/>
         <column name="field2" type="boolean"/>
         <column name="field3" type="int"/>

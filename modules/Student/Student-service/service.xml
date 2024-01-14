@@ -38,12 +38,32 @@
 
         <!-- Order -->
         <order by="asc">
-            <order-column name="field1"/>
+            <order-column name="studentName"/>
         </order>
         <!-- Finder methods -->
 
-        <finder name="Field2" return-type="Collection">
-            <finder-column name="field2"/>
+        <!--findByGroupId 메소드는 Liferay의 멀티테넌시(multi-tenancy)와 그룹 기반 데이터 관리 기능을 활용하는 핵심적인 부-->
+        <finder name="GroupId" return-type="Collection">
+            <finder-column name="groupId"/>
+        </finder>
+
+        <finder name="StudentCode" return-type="Collection">
+            <finder-column name="studentCode"/>
+        </finder>
+        <finder name="StudentName" return-type="Collection">
+            <finder-column name="studentCode"/>
+        </finder>
+        <finder name="StudentEmail" return-type="Collection">
+            <finder-column name="studentEmail"/>
+        </finder>
+        <finder name="StudentPhone" return-type="Collection">
+            <finder-column name="studentPhone"/>
+        </finder>
+        <finder name="StudentGender" return-type="Collection">
+            <finder-column name="studentGender"/>
+        </finder>
+        <finder name="StudentAddress" return-type="Collection">
+            <finder-column name="studentAddress"/>
         </finder>
 
         <!-- References -->
